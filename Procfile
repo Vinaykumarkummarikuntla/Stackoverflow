@@ -1,0 +1,1 @@
+web: guicorn stackproject.wsgi
