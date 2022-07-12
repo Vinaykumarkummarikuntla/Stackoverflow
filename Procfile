@@ -1,1 +1,1 @@
-web: guicorn stackproject.wsgi
+web: gunicorn stackproject.wsgi
