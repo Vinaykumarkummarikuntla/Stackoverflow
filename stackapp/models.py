@@ -1,7 +1,7 @@
 from distutils.command.upload import upload
 from email.mime import image
 from django.forms import CharField, ImageField
-from ckeditor.fields import RichTextField
+#from ckeditor.fields import RichTextField
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
@@ -13,8 +13,8 @@ class Question(models.Model):
     userid = models.IntegerField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=10000)
-    # content = models.TextField(null=True, blank=True)
-    content = RichTextField()
+    content = models.TextField(null=True, blank=True)
+    #content = RichTextField()
     #likes = models.ManyToManyField(User, related_name='question_post')
     date_created = models.DateTimeField(default=timezone.now)   
     
