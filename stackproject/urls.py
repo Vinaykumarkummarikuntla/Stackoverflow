@@ -19,5 +19,5 @@ from stackapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('homr/', views.display)
+    path('home/', views.display)
 ]
