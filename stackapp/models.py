@@ -31,7 +31,7 @@ class Comment(models.Model):
     #userid = models.ForeignKey(user, on_delete=models.CASCADE)
     question = models.ForeignKey(Question, related_name="comment", on_delete=models.CASCADE)
     name = models.CharField(max_length=1000)
-    content = RichTextField()
+    #content = RichTextField()
     date_created = models.DateTimeField(default=timezone.now)   
 
     # def __str__(self):
@@ -44,7 +44,7 @@ class Comment(models.Model):
     #     super().save(*args, **kwargs)
 
 class user(models.Model):
-    username = models.OneToOneField("user", on_delete=models.CASCADE)
+   # username = models.OneToOneField("user", on_delete=models.CASCADE)
     bio = CharField()
     phonenumber = models.IntegerField()
    # image =  ImageField(upload= " ")
