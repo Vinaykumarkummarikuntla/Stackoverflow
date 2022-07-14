@@ -9,5 +9,8 @@ def display(request):
     s='<h1>Hello Welcome to Heroku Server!!!</h1>'
     return render(request,'Home.html')
 
+def about(request):
+    return render(request,'About.html')
+
 class QuestionListView(ListView):
     model = Question

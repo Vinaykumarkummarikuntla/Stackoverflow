@@ -19,5 +19,8 @@ from stackapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.display)
+    path('home/', views.display),
+    path('about/', views.about),
+    path('questions/',views.QuestionListView.as_view())
+    
 ]
