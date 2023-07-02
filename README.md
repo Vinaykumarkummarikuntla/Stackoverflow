@@ -12,7 +12,7 @@ StackOverflow is a web application built using Django, a Python web framework, d
 
 ## Installation and Usage
 1. Clone the repository:
-`git clone https://github.com/your-username/StackOverflowClone.git`
+`git clone https://github.com/Vinaykumarkummarikuntla/Stackoverflow.git`
 
 2. Install the required dependencies:
 `pip install -r requirements.txt`
